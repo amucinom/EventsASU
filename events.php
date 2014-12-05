@@ -54,7 +54,7 @@ session_start();
                 echo "<input type=\"hidden\" name=\"event_Id\" value=\"$eid\" maxlength=\"60\">";
                 echo "<input class='btn btn-danger' name='delete' type=\"submit\" value=\"delete\" > </form>";
                 echo "<td><form action='update.php' target='test' method='post'>";
-                echo "<input class='btn btn-primary' name='update' type=\"submit\" value=\"update\" > </form></th>";
+                echo "<input class='btn btn-warning' name='update' type=\"submit\" value=\"update\" > </form></th>";
                 echo "<td><form action='comments.php' target='test' method='post'>";
                 echo "<input class='btn btn-primary' name='comment' type=\"submit\" value=\"comment\" > </form></th>";
                 echo "</tr>";
@@ -91,7 +91,8 @@ session_start();
 
 		   echo "You have logged out";
 		   echo "<br> Please re-login. You will be directed to the login page in 5 seconds";
-		   header("refresh:5 ; url=userloginses.html");
+		   header("refresh:3 ; url=userloginses.html");
+		   echo "<a class='btn btn-info' href='userloginses.php'>Go to Login Page</a>";
 		}
 	?>
 
