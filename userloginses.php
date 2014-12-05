@@ -1,4 +1,13 @@
-<?php
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ASU Events</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+</head>
+<body>
+	<?php
 session_start();
 include("dbconnect.php");
 $con= new dbconnect();
@@ -16,7 +25,7 @@ if (mysql_num_rows($result) == 1) {
       while ($info = mysql_fetch_array($result)) {
 	$type =$info['type'];
 	}
-      echo $type;
+      // echo $type;
        if($type == 1)
         {
          $_SESSION['type']=$type; // type of user (admin or regular)
@@ -39,5 +48,9 @@ if (mysql_num_rows($result) == 1) {
 
 }
 ?>
+</body>
+</html>
+
+
 
 
