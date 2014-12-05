@@ -27,7 +27,7 @@
 
 		<form role="form" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" >
 
-			<label for="comment_id">Comment ID: </label><input type="text" name="comment_id" /><br />
+			<!-- <label for="comment_id">Comment ID: </label><input type="text" name="comment_id" /><br /> -->
 			<label for="eid">Event ID: </label><input type="text" name="eid" /><br />
 			<label for="comment">Comment: </label><textarea type="text" name="comment"></textarea><br />
 			<!-- <label for="event_date">Event Date: </label><input type="text" name="event_date" /><br /> -->

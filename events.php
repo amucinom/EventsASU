@@ -68,16 +68,22 @@ session_start();
       }
    echo "</tr>";
 
+   			echo "<a class='btn btn-primary' href='viewComments.php'>View Comments</a>";
+
 			echo "</table>";
 			echo "</center><br><br>";
 			echo "<form action=insert.php>";
 			echo "<input type = \"submit\" value = \"Add Record\"/></form>";
 
 
+
+
 			echo "<form action=logout.php>";
 			echo "<input type = \"submit\" value = \"Logout\"/></form>";
 			echo "</body>";
 			echo "</html>";
+
+
 
 		} else {
 
