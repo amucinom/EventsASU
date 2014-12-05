@@ -14,8 +14,8 @@
 			$con->connect();
 			if(isset($_POST['submit'])) {
 			  $sSql = "INSERT INTO comments
-					 (eid, comment)
-					 VALUES ('".$_POST['eid']."','".$_POST['comment']."')";
+					 (comment_id, eid, comment)
+					 VALUES ('".$_POST['comment_id']."','".$_POST['eid']."','".$_POST['comment']."')";
 			        echo "$sSql <br>";
 				mysqli_query($sSql);
 			        $update=mysqli_affected_rows();
@@ -27,15 +27,14 @@
 
 		<form role="form" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" >
 
+			<label for="comment_id">Comment ID: </label><input type="text" name="comment_id" /><br />
 			<label for="eid">Event ID: </label><input type="text" name="eid" /><br />
-
 			<label for="comment">Comment: </label><textarea type="text" name="comment"></textarea><br />
-<!-- 			<label for="event_location">Event Location: </label><input type="text" name="event_location" /><br />
-			<label for="event_date">Event Date: </label><input type="text" name="event_date" /><br /> -->
-			<input class="btn btn-primary" type="submit" name="submit" value="Add Record" />
+			<!-- <label for="event_date">Event Date: </label><input type="text" name="event_date" /><br /> -->
+			<input class="btn btn-primary" type="submit" name="submit" value="Add Comment" />
 
 		</form>
-		<a href="events.php">Home</a></div>
+		<a class="btn btn-primary" href="events.php">Home</a></div>
 
 </body>
 </html>
