@@ -52,9 +52,11 @@ session_start();
                 echo "<td> $edate </td>";
                 echo "<td> <form action=\"delete.php\" target=\"test\" method=\"post\">";
                 echo "<input type=\"hidden\" name=\"event_id\" value=\"$eid\" maxlength=\"60\">";
-                echo "<input class='btn btn-danger' name='delete' type=\"submit\" value=\"submit\" > </form>";
+                echo "<input class='btn btn-danger' name='delete' type=\"submit\" value=\"delete\" > </form>";
                 echo "<td><form action='update.php' target='test' method='post'>";
                 echo "<input class='btn btn-primary' name='update' type=\"submit\" value=\"update\" > </form></th>";
+                echo "<td><form action='comments.php' target='test' method='post'>";
+                echo "<input class='btn btn-primary' name='comment' type=\"submit\" value=\"comment\" > </form></th>";
                 echo "</tr>";
                 // echo "<table>";
 
