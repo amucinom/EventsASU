@@ -18,16 +18,16 @@ if (mysql_num_rows($result) == 1) {
        if($type == 1)
         {
 
-          setcookie("auth", "1", 0); 
-          echo "Login success, you will be directed to the  AddressBook in 5 seconds";
-          header("refresh:5 url= addressbook.php");
+          setcookie("auth", "1", 0);
+          echo "Login success, you will be directed to the ASU Events page in 3 seconds";
+          header("refresh:3 url= events.php");
         }
        else
         {
-       
-       setcookie("auth", "0", 0); 
-          echo "Login success, you will be directed to the  AddressBook in 5 seconds";
-  header("refresh:5 url= addressbook.php");
+
+       setcookie("auth", "0", 0);
+          echo "Login success, you will be directed to the ASU Events page in 3 seconds";
+  header("refresh:3 url= events.php");
         }
 
 

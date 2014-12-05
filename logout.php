@@ -30,6 +30,7 @@ if (ini_get("session.use_cookies")) {
 
 if(session_destroy())
 echo "Logged Out Successfully!";
+header("refresh:3;url=userloginses.html")
 ?>
 
 </body>

@@ -21,15 +21,15 @@ if (mysql_num_rows($result) == 1) {
         {
          $_SESSION['type']=$type; // type of user (admin or regular)
          $_SESSION['status']=100; // indicate that the login is successful
-         echo "Login success, you will be directed to the ASU Events in 5 seconds";
-         header("refresh: 5; url= events.php");
+         echo "Login success, you will be directed to the ASU Events page in 3 seconds";
+         header("refresh: 3; url= events.php");
         }
         elseif($type == 0)
         {
           $_SESSION['type']=$type;
           $_SESSION['status']=100;
-          echo "Login success, you will be directed to the ASU Events in 5 seconds";
-          header("refresh:5 ; url= events.php");
+          echo "Login success, you will be directed to the ASU Events page in 3 seconds";
+          header("refresh:3 ; url= events.php");
         }
 
       }  else {
