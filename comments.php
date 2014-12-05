@@ -17,8 +17,8 @@
 					 (comment_id, eid, comment)
 					 VALUES ('".$_POST['comment_id']."','".$_POST['eid']."','".$_POST['comment']."')";
 			        echo "$sSql <br>";
-				mysqli_query($sSql);
-			        $update=mysqli_affected_rows();
+					mysql_query($sSql);
+			        $update = mysql_affected_rows();
 				echo "<h2>$update Comment Submitted</h2><br />";
 				header("refresh:5;url=viewComments.php");
 			}

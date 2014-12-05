@@ -38,14 +38,14 @@ session_start();
       echo "<th> Comments</th>";
                   while($row = mysql_fetch_array($result))
             	  {
-                $eid=$row[0];
-                $commID=$row[1];
+                $comment_id=$row[0];
+                $eid=$row[1];
                 $comment=$row[2];
 
                 // echo "<table class='table'>";
                 echo "<tr>";
-                echo "<td> $eid </td>";
-                echo "<td> $commID  </td>";
+                echo "<td> $comment_id </td>";
+                echo "<td> $eid  </td>";
                 echo "<td> $comment </td>";
                 // echo "<td> <form action=\"delete.php\" target=\"test\" method=\"post\">";
                 // echo "<input type=\"hidden\" name=\"event_id\" value=\"$eid\" maxlength=\"60\">";

@@ -17,8 +17,8 @@
 					 (event_id, event_name, event_location, event_date)
 					 VALUES ('".$_POST['event_id']."','".$_POST['event_name']."', '".$_POST['event_location']."','".$_POST['event_date']."')";
 			        echo "$sSql <br>";
-				mysqli_query($sSql);
-			        $update=mysqli_affected_rows();
+				mysql_query($sSql);
+			        $update=mysql_affected_rows();
 				echo "<h2>$update Record Inserted</h2><br />";
 			}
 		?>
