@@ -15,7 +15,7 @@
 		$oResult = mysql_query($sSql);
 	    $rows = mysql_affected_rows();
 		echo "<h2> $rows Record(s) Deleted </h2>";
-		header("refresh:5;url=events.php");
+		header("refresh:3;url=events.php");
 
 
 	// }

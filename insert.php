@@ -20,6 +20,7 @@
 				mysql_query($sSql);
 			        $update=mysql_affected_rows();
 				echo "<h2>$update Record Inserted</h2><br />";
+				header("refresh:3\;url=events.php");
 			}
 		?>
 
