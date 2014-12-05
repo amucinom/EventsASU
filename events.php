@@ -68,7 +68,6 @@ session_start();
       }
    echo "</tr>";
 
-   			echo "<a class='btn btn-primary' href='viewComments.php'>View Comments</a>";
 
 			echo "</table>";
 			echo "</center><br><br>";
@@ -82,6 +81,9 @@ session_start();
 			echo "<input type = \"submit\" value = \"Logout\"/></form>";
 			echo "</body>";
 			echo "</html>";
+
+			echo "<a class='btn btn-primary' href='viewComments.php'>View Comments</a>";
+
 
 
 
