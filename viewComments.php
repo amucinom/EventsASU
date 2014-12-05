@@ -21,6 +21,7 @@ session_start();
 			// echo $_SESSION['type'];
 			// echo $_SESSION['status'];
 			$result = mysql_query("SELECT * FROM comments");
+			// echo $result;
 
 			// $event = new manageEvent();
 			// $event->createTable();
@@ -43,7 +44,7 @@ session_start();
                 // echo "<table class='table'>";
                 echo "<tr>";
                 echo "<td> $eid </td>";
-                echo "<td> $commID  </td>";
+                // echo "<td> $commID  </td>";
                 echo "<td> $comment </td>";
                 // echo "<td> <form action=\"delete.php\" target=\"test\" method=\"post\">";
                 // echo "<input type=\"hidden\" name=\"event_id\" value=\"$eid\" maxlength=\"60\">";
@@ -53,7 +54,7 @@ session_start();
                 // echo "<td><form action='comments.php' target='test' method='post'>";
                 // echo "<input class='btn btn-primary' name='comment' type=\"submit\" value=\"comment\" > </form></th>";
                 echo "</tr>";
-                // echo "<table>";
+                echo "<table>";
 
             }
       if($_SESSION['type']==1) // give delete and update access only to admin users

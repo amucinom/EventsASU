@@ -20,16 +20,16 @@
 				mysqli_query($sSql);
 			        $update=mysqli_affected_rows();
 				echo "<h2>$update Comment Submitted</h2><br />";
-
+				header("refresh:5;url=viewComments.php");
 			}
-			header("refresh:5;url=viewComments.php");
+
 		?>
 
 		<form role="form" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" >
 
 			<label for="eid">Event ID: </label><input type="text" name="eid" /><br />
 
-			<label for="comment">Comment: </label><textarea type="text" name="comment" /><br />
+			<label for="comment">Comment: </label><textarea type="text" name="comment"></textarea><br />
 <!-- 			<label for="event_location">Event Location: </label><input type="text" name="event_location" /><br />
 			<label for="event_date">Event Date: </label><input type="text" name="event_date" /><br /> -->
 			<input class="btn btn-primary" type="submit" name="submit" value="Add Record" />
